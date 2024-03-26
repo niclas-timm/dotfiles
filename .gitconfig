@@ -1,0 +1,9 @@
+# This is Git's per-user configuration file.
+[user]
+        name = Niclas Timm
+        email = niclastimmdev@gmail.com
+[alias]
+        authors = !git log --format='%aN <%aE>' | grep -v 'users.noreply.github.com' | sort -u --ignore-case
+        diff-develop= !git diff develop --name-only
+        diff-main= !git diff main --name-only
+~
